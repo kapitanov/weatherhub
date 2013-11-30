@@ -1,0 +1,161 @@
+(PCB C:\Users\Альберт\Documents\PCAD\Weatherhub\WHub_ExtSensor.DSN
+ (parser
+  (host_cad Altium)
+  (host_version 18.00)
+  (string_quote ')
+  (routes_include testpoint)
+  (constant Top 1)
+  (constant Bottom 2)
+  (constant TestPointLayerNumFront 10)
+  (constant TestPointLayerNumBack 11)
+ )
+ (resolution MM 100000)
+ (structure 
+  (rule (clearance 0.3048))
+  (boundary
+   (rect pcb 5.0 15.0 115.0 75.0)
+  )
+  (boundary
+   (path signal 0
+    10.0 70.0 10.0 20.0 110.0 20.0 110.0 70.0 10.0 70.0
+   )
+  )
+  (layer Top
+   (type signal)
+   (rule (clearance 0.3048))
+  )
+  (layer Bottom
+   (type signal)
+   (rule (clearance 0.3048))
+  )
+  (keepout
+   (polygon signal 0
+    20.0 60.0 100.0 60.0 100.0 30.0 20.0 30.0 
+   )
+  )
+  (grid via .01)
+  (grid wire .01)
+  (rule (width 0.254))
+  (via
+   'CCTVIA_(Default)'
+   (spare
+   )
+  )
+ )
+ (placement
+  (component CAPASITOR_POL_1
+   (place C1 25.4 40.64 front 270
+   )
+  )
+  (component ATTINY85_1
+   (place IC1 53.34 55.88 front 0
+   )
+  )
+  (component RESISTOR_1
+   (place R1 30.48 40.64 front 0
+   )
+  )
+  (component DHT11_1
+   (place U1 38.1 48.26 back -180
+   )
+  )
+  (component HEADER_2X2H_1
+   (place X1 66.04 40.64 front 0
+   )
+  )
+  (component XTAL_1
+   (place Z1 45.72 40.64 front 0
+   )
+  )
+ )
+ (library
+  (image CAPASITOR_POL_1
+   (outline (rect Top -2.413 -3.683 2.413 1.143))
+   (pin Default 2 0.0 -2.54)
+   (pin Default 1 0.0 0.0)
+  )
+  (image ATTINY85_1
+   (outline (rect Top 1.143 -9.017 6.477 1.397))
+   (pin Default 4 0.0 -7.62)
+   (pin Default 3 0.0 -5.08)
+   (pin Default 2 0.0 -2.54)
+   (pin Default 1 0.0 0.0)
+   (pin Default 5 7.62 -7.62)
+   (pin Default 6 7.62 -5.08)
+   (pin Default 7 7.62 -2.54)
+   (pin Default 8 7.62 0.0)
+  )
+  (image RESISTOR_1
+   (outline (rect Top 0.889 -1.143 7.239 1.143))
+   (pin Default 1 0.0 0.0)
+   (pin Default 2 8.128 0.0)
+  )
+  (image DHT11_1
+   (outline (rect Top -17.907 -10.287 2.667 2.667))
+   (pin Default 4 0.0 -7.62)
+   (pin Default 1 0.0 0.0)
+   (pin Default 2 0.0 -2.54)
+   (pin Default 3 0.0 -5.08)
+  )
+  (image HEADER_2X2H_1
+   (outline (rect Top -1.37 -6.45 3.91 -1.17))
+   (pin Default 1 0.0 0.0)
+   (pin Default 2 0.0 2.54)
+   (pin Default 3 2.54 0.0)
+   (pin Default 4 2.54 2.54)
+  )
+  (image XTAL_1
+   (outline (rect Top -2.667 -2.032 7.747 2.032))
+   (pin Default 1 0.0 0.0)
+   (pin Default 2 5.08 0.0)
+  )
+  (padstack Default
+   (shape
+    (path Top 1.016 -0.508 -0.508 0.508 -0.508 0.508 0.508 -0.508 0.508 -0.508 -0.508 0.0 0.0)
+   )
+   (shape
+    (path Bottom 1.016 -0.508 -0.508 0.508 -0.508 0.508 0.508 -0.508 0.508 -0.508 -0.508 0.0 0.0)
+   )
+  )
+  (padstack 'CCTVIA_(Default)'
+   (shape
+    (circle Top 1.016)
+   )
+   (shape
+    (circle Bottom 1.016)
+   )
+  )
+ )
+ (network
+  (net RX
+   (pins IC1-5 X1-2)
+   (rule (tjunction on))
+  )
+  (net DAT
+   (pins IC1-6 U1-2 R1-1)
+   (rule (tjunction on))
+  )
+  (net XTAL2
+   (pins IC1-3 Z1-2)
+   (rule (tjunction on))
+  )
+  (net VCC
+   (pins C1-1 IC1-8 X1-1 U1-1 R1-2)
+   (rule (tjunction on))
+  )
+  (net TX
+   (pins IC1-7 X1-4)
+   (rule (tjunction on))
+  )
+  (net XTAL1
+   (pins IC1-2 Z1-1)
+   (rule (tjunction on))
+  )
+  (net GND
+   (pins C1-2 IC1-4 X1-3 U1-4)
+   (rule (tjunction on))
+  )
+ )
+ (wiring
+ )
+)

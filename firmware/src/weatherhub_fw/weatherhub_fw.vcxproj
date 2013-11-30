@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{018B5FF0-004C-4029-8B1A-8464C9FF3632}</ProjectGuid>
+    <RootNamespace>weatherhub_fw</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>c:\dev\tools\arduino\hardware\arduino\cores\arduino;c:\dev\tools\arduino\hardware\arduino\variants\standard;c:\dev\tools\arduino\libraries\SoftwareSerial;c:\dev\tools\arduino\libraries\SoftwareSerial\utility;C:\Users\Альберт\Documents\Arduino\libraries\esr;C:\Users\Альберт\Documents\Arduino\libraries\esr\utility;C:\Users\Альберт\Documents\Arduino\libraries\AdafuitNokiaLCD;C:\Users\Альберт\Documents\Arduino\libraries\AdafuitNokiaLCD\utility;C:\Users\Альберт\Documents\Arduino\libraries\AdafruitGFX;C:\Users\Альберт\Documents\Arduino\libraries\AdafruitGFX\utility;C:\Users\Альберт\Documents\Arduino\libraries\DHT;C:\Users\Альберт\Documents\Arduino\libraries\DHT\utility;C:\dev\tools\arduino\hardware\tools\avr\avr\include;C:\dev\tools\arduino\hardware\tools\avr\avr\include\avr;C:\dev\tools\arduino\hardware\tools\avr\avr;C:\dev\tools\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\Альберт\Documents\Arduino\weatherhub_fw\Visual Micro\.weatherhub_fw.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega328P__;ARDUINO=105;ARDUINO_MAIN;__AVR__;F_CPU=16000000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>c:\dev\tools\arduino\hardware\arduino\cores\arduino;c:\dev\tools\arduino\hardware\arduino\variants\standard;c:\dev\tools\arduino\libraries\EEPROM;c:\dev\tools\arduino\libraries\EEPROM\utility;c:\dev\tools\arduino\libraries\SoftwareSerial;c:\dev\tools\arduino\libraries\SoftwareSerial\utility;C:\Users\Альберт\Documents\Arduino\libraries\esr;C:\Users\Альберт\Documents\Arduino\libraries\esr\utility;C:\Users\Альберт\Documents\Arduino\libraries\AdafuitNokiaLCD;C:\Users\Альберт\Documents\Arduino\libraries\AdafuitNokiaLCD\utility;C:\Users\Альберт\Documents\Arduino\libraries\AdafruitGFX;C:\Users\Альберт\Documents\Arduino\libraries\AdafruitGFX\utility;C:\Users\Альберт\Documents\Arduino\libraries\DHT;C:\Users\Альберт\Documents\Arduino\libraries\DHT\utility;C:\dev\tools\arduino\hardware\tools\avr\avr\include;C:\dev\tools\arduino\hardware\tools\avr\avr\include\avr;C:\dev\tools\arduino\hardware\tools\avr\avr;C:\dev\tools\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\Альберт\Documents\Arduino\weatherhub_fw\Visual Micro\.weatherhub_fw.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>__AVR_ATmega328P__;ARDUINO=105;ARDUINO_MAIN;__AVR__;F_CPU=16000000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="weatherhub_fw.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="backlight.h" />
+    <ClInclude Include="settings.h" />
+    <ClInclude Include="extsensor.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="gui.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="intsensor.h" />
+    <ClInclude Include="Visual Micro\.weatherhub_fw.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backlight.cpp" />
+    <ClCompile Include="settings.cpp" />
+    <ClCompile Include="extsensor.cpp" />
+    <ClCompile Include="gui.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="intsensor.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM4" arduino.board.name="uno" arduino.board.desc="Arduino Uno" arduino.board.property_bag="name=Arduino Uno&#xD;&#xA;upload.protocol=arduino&#xD;&#xA;upload.maximum_size=32256&#xD;&#xA;upload.maximum_ram_size=2048&#xD;&#xA;upload.speed=115200&#xD;&#xA;bootloader.low_fuses=0xff&#xD;&#xA;bootloader.high_fuses=0xde&#xD;&#xA;bootloader.extended_fuses=0x05&#xD;&#xA;bootloader.path=optiboot&#xD;&#xA;bootloader.file=optiboot_atmega328.hex&#xD;&#xA;bootloader.unlock_bits=0x3F&#xD;&#xA;bootloader.lock_bits=0x0F&#xD;&#xA;build.mcu=atmega328p&#xD;&#xA;build.f_cpu=16000000L&#xD;&#xA;build.core=arduino&#xD;&#xA;build.variant=standard&#xD;&#xA;runtime.ide.path=c:\dev\tools\arduino&#xD;&#xA;build.system.path=c:\dev\tools\arduino\hardware\arduino\system&#xD;&#xA;runtime.ide.version=105&#xD;&#xA;originalid=uno&#xD;&#xA;vm.core.include=arduino.h&#xD;&#xA;vm.boardsource.path=c:\dev\tools\arduino\hardware\arduino&#xD;&#xA;vm.platformname.name=avr&#xD;&#xA;build.arch=AVR&#xD;&#xA;ide.hint=Arduino 0023 and 1.0.x Ide&#xD;&#xA;ide.location.key=Arduino&#xD;&#xA;ide.location.ide.winreg=Arduino 1.0.x Application&#xD;&#xA;ide.location.sketchbook.winreg=Arduino 1.0.x Sketchbook&#xD;&#xA;ide.location.sketchbook.preferences=sketchbook.path&#xD;&#xA;ide.location.sketchbook.default=%MYDOCUMENTS%\arduino&#xD;&#xA;ide.location.preferences=%VM_APPDATA_ROAMING%\arduino\preferences.txt&#xD;&#xA;ide.default.package=arduino&#xD;&#xA;ide.default.platform=avr&#xD;&#xA;ide.multiplatform=true&#xD;&#xA;ide.includes=arduino.h&#xD;&#xA;ide.platformswithoutpackage=true&#xD;&#xA;ide.sketchfolder.platforms.exclude=avr&#xD;&#xA;ide.includes.fallback=wprogram.h&#xD;&#xA;ide.extension=ino&#xD;&#xA;ide.extension.fallback=pde&#xD;&#xA;ide.versionLTEQ=149&#xD;&#xA;ide.exe=arduino.exe&#xD;&#xA;ide.hosts=atmel&#xD;&#xA;ide.url=http://arduino.cc/en/Main/Software&#xD;&#xA;vm.debug=true&#xD;&#xA;software=ARDUINO&#xD;&#xA;ide.appid=arduino10x&#xD;&#xA;location.sketchbook=C:\Users\Альберт\Documents\Arduino&#xD;&#xA;" arduino.build.mcu="atmega328p" arduino.build.f_cpu="16000000L" arduino.build.core="arduino" arduino.upload.protocol="arduino" arduino.upload.speed="115200" arduino.upload.maximum_size="32256" visualmicro.application.name="arduino10x" visualmicro.package.name="arduino" visualmicro.platform.name="avr" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

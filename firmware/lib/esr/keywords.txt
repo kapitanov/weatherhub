@@ -1,0 +1,30 @@
+#######################################
+# Syntax Coloring Map For SysLog
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+log_level	KEYWORD1
+log_event	KEYWORD1
+logger	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+printf	KEYWORD2
+init	KEYWORD2
+error	KEYWORD2
+info	KEYWORD2
+debug	KEYWORD2
+begin_event	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+LOG_DEBUG LITERAL1
+LOG_INFO LITERAL1
+LOG_ERROR LITERAL1

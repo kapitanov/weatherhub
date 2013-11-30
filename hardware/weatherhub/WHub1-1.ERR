@@ -1,0 +1,66 @@
+P-CAD Net List Load Errors
+
+======================================================================
+
+Netlist filename: C:\Users\Альберт\Documents\PCAD\Weatherhub\WHub1-1.net
+Warning: line 1406
+   * Component Z1 pattern mismatch between board (XTAL) and netlist file (XTAL_LARGE)
+Warning: line 1561
+   * Component U1 pattern mismatch between board (VOLT_REG_ALT) and netlist file (SIP-G3/Y2)
+
+Net List Errors:   0
+Net List Warnings: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+24-Oct-13  22:51                                            Page    1
+
